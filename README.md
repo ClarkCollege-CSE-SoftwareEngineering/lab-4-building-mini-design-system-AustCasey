@@ -268,7 +268,7 @@ describe('Button', () => {
   it('applies transparent background for ghost variant', () => {
     render(<Button variant="ghost">Ghost</Button>);
     const button = screen.getByRole('button');
-    expect(button).toHaveStyle({ backgroundColor: 'transparent' });
+    expect(button).toHaveStyle({ backgroundColor: 'rgba(0, 0, 0, 0)' });
   });
 
   it('applies reduced opacity when disabled', () => {
