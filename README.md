@@ -1269,3 +1269,27 @@ export const colors = { ... } as const;
 - 🔗 [Design Tokens W3C Community Group](https://www.w3.org/community/design-tokens/)
 - 🔗 [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
 - 🔗 [Vitest Documentation](https://vitest.dev/)
+
+
+
+## Reflections
+
+Austin Casey
+Lab 4
+2FEB26
+
+**2.4** Design tokens allow you to set a default color or style to a constant so if you want to change all of the success colors, all you need to due is change the color assigned in the color token.
+
+**3.5** If we used conditionals they would get very long and it would link a size and style together, making it more difficult to modify later on. This connects to his idea of atoms because having them set up to use reusable pieces like size and variant makes them more customizable and allows you tro reuse them in deifferent ways in other molecules.
+
+**4.3** The Alert molecule using atoms shows that these more or less useless components can be combined to make something that can actually generate a response and could be used in a system. IF we built Alert without the atoms we would have had to create them from scratch just to use in this organism, and then create them again elsewhere.
+
+**Reflection Section**
+Reusing components allows you to modify themes across the entire app without the need to change each component individually. This also allows you to write the code for a button, label, etc. one time and get to use them over and over again. This saves lots of time and effort and also simplifies trouble shooting. An error in one atom will cause issues everywhere making it easier to pinpoint. 
+
+The tokens allow you to set themes across the entire app all in one place. This lets you adjust themes by changing a couple lines of code that will effect all the other elements that rely on them. Much like bootstraps which allow for predesigned elements and themes, except these ones are designed by you. Because they are custom they prevent all apps from eventually looking similar to one another while still allowing the convenience. 
+
+IF you wanted to support a dark mode theme all you would need to change is the colors token. You could add one that was a dark mode constant that could be used by other elements. Then whenever you wanted to use the dark mode theme all you would have to do is add it as an option to the respective element.
+
+**Key Concepts**
+I learned about using atomic design hierarchy, implementing design tokens, and composing complex components from simpler building blocks.
